@@ -20,7 +20,7 @@ public class Zona {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public Zoologico getZoologico() {
+	public Zoologico getZoo() {
 		return zoo;
 	}
 	public void setZoo(Zoologico zoo) {
