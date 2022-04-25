@@ -18,10 +18,10 @@ public class Anfibio extends Animal{
 		this.venenoso = venenoso;
 	}
 	
-	public String getColorpiel() {
+	public String getColorPiel() {
 		return colorpiel;
 	}
-	public void setColorpiel(String color) {
+	public void setColorPiel(String color) {
 		colorpiel = color;
 	}
 	public boolean getVenenoso() {
