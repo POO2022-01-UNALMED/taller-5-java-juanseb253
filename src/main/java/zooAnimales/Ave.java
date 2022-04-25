@@ -1,9 +1,10 @@
 package zooAnimales;
 
 import gestion.Zona;
+import java.util.ArrayList;
 
 public class Ave extends Animal{
-	private static Mamifero[] listado;
+	private static ArrayList<Ave> listado = new ArrayList<Ave>();
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
@@ -27,14 +28,16 @@ public class Ave extends Animal{
 		return "volar";
 	}
 	public static int cantidadAves() {
-		return listado.length;
+		return listado.size();
 	}
-	public static void crearHalcon(String nombre, int edad, String genero) {
+	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		Ave a = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 		halcones ++;
+		return a;
 	}
-	public static void crearAguila(String nombre, int edad, String genero) {
+	public static Ave crearAguila(String nombre, int edad, String genero) {
 		Ave a = new Ave(nombre, edad, "blanco y amarillo", genero, "cafe glorioso");
 		aguilas ++;
+		return a;
 	}
 }
